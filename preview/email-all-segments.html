@@ -11,173 +11,79 @@
             margin: 0;
             padding: 20px;
         }
-        .segment-block {
-            max-width: 600px;
-            margin: 0 auto 50px;
-        }
+        .segment-block { max-width: 600px; margin: 0 auto 50px; }
         .preview-label {
-            font-size: 13px;
-            font-weight: 600;
-            color: #fff;
-            background: #495057;
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 4px 4px 0 0;
+            font-size: 13px; font-weight: 600; color: #fff; background: #495057;
+            display: inline-block; padding: 4px 12px; border-radius: 4px 4px 0 0;
         }
         .segment-desc {
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 0 6px 6px 6px;
-            padding: 10px 14px;
-            margin-bottom: 12px;
-            font-size: 13px;
-            color: #555;
-            line-height: 1.5;
+            background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 0 6px 6px 6px;
+            padding: 10px 14px; margin-bottom: 12px; font-size: 13px; color: #555; line-height: 1.5;
         }
         .segment-desc b { color: #333; }
         .email-subject {
-            background: #fff;
-            border: 1px solid #dee2e6;
-            border-radius: 6px;
-            padding: 8px 14px;
-            margin-bottom: 8px;
-            font-size: 13px;
-            color: #333;
+            background: #fff; border: 1px solid #dee2e6; border-radius: 6px;
+            padding: 8px 14px; margin-bottom: 8px; font-size: 13px; color: #333;
         }
         .email-subject span { color: #999; }
-        .email-body .attachment {
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 6px;
-            padding: 10px 16px;
-            margin: 16px 0;
-            font-size: 13px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .email-body .attachment .icon { font-size: 20px; }
-        /* ---------- email template styles ---------- */
         .email-container {
-            background: #ffffff;
-            border-radius: 8px;
-            overflow: hidden;
+            background: #ffffff; border-radius: 8px; overflow: hidden;
             box-shadow: 0 2px 12px rgba(0,0,0,0.08);
         }
         .email-header {
             background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-            padding: 24px 30px;
-            text-align: center;
+            padding: 24px 30px; text-align: center;
         }
-        .email-header h1 {
-            color: #ffffff;
-            margin: 0;
-            font-size: 22px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-        .email-header .subtitle {
-            color: rgba(255,255,255,0.85);
-            font-size: 13px;
-            margin-top: 4px;
-        }
-        .email-body {
-            padding: 30px;
-            color: #333;
-            line-height: 1.7;
-            font-size: 15px;
-        }
+        .email-header h1 { color: #ffffff; margin: 0; font-size: 22px; font-weight: 600; letter-spacing: 0.5px; }
+        .email-header .subtitle { color: rgba(255,255,255,0.85); font-size: 13px; margin-top: 4px; }
+        .email-body { padding: 30px; color: #333; line-height: 1.7; font-size: 15px; }
         .email-body p { margin: 0 0 16px; }
         .email-body .greeting { font-size: 17px; font-weight: 500; }
         .email-body .stats-box {
-            background: #f8f9fa;
-            border-left: 4px solid #007bff;
-            padding: 16px 20px;
-            margin: 20px 0;
-            border-radius: 0 6px 6px 0;
+            background: #f8f9fa; border-left: 4px solid #007bff;
+            padding: 16px 20px; margin: 20px 0; border-radius: 0 6px 6px 0;
         }
-        .email-body .stats-box .stat-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 4px 0;
-        }
-        .email-body .stats-box .stat-value {
-            font-weight: 600;
-            color: #007bff;
-        }
+        .email-body .stats-box .stat-row { display: flex; justify-content: space-between; padding: 4px 0; }
+        .email-body .stats-box .stat-value { font-weight: 600; color: #007bff; }
         .email-body .progress-bar-wrap {
-            background: #e9ecef;
-            border-radius: 10px;
-            height: 20px;
-            margin: 12px 0;
-            overflow: hidden;
+            background: #e9ecef; border-radius: 10px; height: 20px; margin: 12px 0; overflow: hidden;
         }
         .email-body .progress-bar-fill {
-            background: linear-gradient(90deg, #28a745, #20c997);
-            height: 100%;
-            border-radius: 10px;
+            background: linear-gradient(90deg, #28a745, #20c997); height: 100%; border-radius: 10px;
         }
-        .email-body .progress-text {
-            font-size: 13px;
-            color: #666;
-            text-align: center;
-            margin-top: 4px;
-        }
+        .email-body .progress-text { font-size: 13px; color: #666; text-align: center; margin-top: 4px; }
         .email-body .cta-button {
-            display: block;
-            text-align: center;
+            display: block; text-align: center;
             background: linear-gradient(135deg, #007bff, #0056b3);
-            color: #ffffff !important;
-            text-decoration: none;
-            padding: 14px 24px;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 600;
-            margin: 24px 0;
+            color: #ffffff !important; text-decoration: none;
+            padding: 14px 24px; border-radius: 8px; font-size: 16px; font-weight: 600; margin: 24px 0;
         }
         .email-body .ref-link {
-            background: #f0f7ff;
-            border: 1px dashed #007bff;
-            border-radius: 6px;
-            padding: 12px 16px;
-            text-align: center;
-            font-family: monospace;
-            font-size: 14px;
-            word-break: break-all;
-            margin: 16px 0;
+            background: #f0f7ff; border: 1px dashed #007bff; border-radius: 6px;
+            padding: 12px 16px; text-align: center; font-family: monospace;
+            font-size: 14px; word-break: break-all; margin: 16px 0;
         }
         .email-body .ref-link a { color: #007bff; text-decoration: none; }
         .email-body .highlight {
-            background: #fff3cd;
-            padding: 12px 16px;
-            border-radius: 6px;
-            margin: 16px 0;
-            font-size: 14px;
+            background: #fff3cd; padding: 12px 16px; border-radius: 6px; margin: 16px 0; font-size: 14px;
         }
         .email-body .help-box {
-            background: #e8f5e9;
-            border-left: 4px solid #28a745;
-            padding: 16px 20px;
-            margin: 20px 0;
-            border-radius: 0 6px 6px 0;
+            background: #e8f5e9; border-left: 4px solid #28a745;
+            padding: 16px 20px; margin: 20px 0; border-radius: 0 6px 6px 0;
         }
-        .email-body ol { padding-left: 20px; margin: 12px 0; }
-        .email-body ol li { margin-bottom: 8px; }
+        .email-body .attachment {
+            background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 6px;
+            padding: 10px 16px; margin: 16px 0; font-size: 13px;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .email-body .attachment .icon { font-size: 20px; }
         .email-body .fact {
-            font-size: 13px;
-            color: #888;
-            border-top: 1px solid #eee;
-            margin-top: 20px;
-            padding-top: 12px;
-            font-style: italic;
+            font-size: 13px; color: #888; border-top: 1px solid #eee;
+            margin-top: 20px; padding-top: 12px; font-style: italic;
         }
         .email-footer {
-            background: #f8f9fa;
-            padding: 20px 30px;
-            text-align: center;
-            font-size: 12px;
-            color: #999;
-            border-top: 1px solid #eee;
+            background: #f8f9fa; padding: 20px 30px; text-align: center;
+            font-size: 12px; color: #999; border-top: 1px solid #eee;
         }
         .email-footer a { color: #007bff; text-decoration: none; }
         .email-footer .heart { color: #e74c3c; }
@@ -213,13 +119,14 @@
             </div>
             <p>Ваша ссылка для приглашения друзей:</p>
             <div class="ref-link"><a href="https://cabinet.gate.lease?ref=ref0lvlCSPC">https://cabinet.gate.lease?ref=ref0lvlCSPC</a></div>
+            <p style="font-size:14px;color:#555;">Друг получит бонус 50 ₽. Вам — 50 ₽ + 30% с каждого его пополнения.</p>
             <a href="https://cabinet.gate.lease/referral" class="cta-button">Моя реферальная статистика</a>
             <div class="attachment"><span class="icon">📎</span> К письму приложена листовка о сервисе — перешлите её друзьям вместе со ссылкой.</div>
             <div class="fact">💡 65 миллионов россиян продолжают ежедневно пользоваться Telegram через VPN — несмотря на блокировку.</div>
         </div>
         <div class="email-footer">
             <p>FreeNetGate — сделано для людей <span class="heart">&hearts;</span></p>
-            <p><a href="https://cabinet.gate.lease/unsubscribe?token=xxx">Отписаться от рассылки</a></p>
+            <p>Не хотите получать эти письма? Просто ответьте на это письмо — отключим.</p>
         </div>
     </div>
 </div>
@@ -240,14 +147,17 @@
             <p>Вы пользуетесь FreeNetGate — и мы рады, что сервис вам полезен.</p>
             <p>У ваших знакомых тоже не работает Telegram, Instagram или YouTube и другие привычные сервисы и соцсети. Поделитесь ссылкой — вы поможете и им, и нашему проекту:</p>
             <div class="ref-link"><a href="https://cabinet.gate.lease?ref=refUcT2QSk6">https://cabinet.gate.lease?ref=refUcT2QSk6</a></div>
-            <div class="highlight">Чем больше нас — тем стабильнее и быстрее сервис для всех.<br>За каждого друга — бонус <b>110 ₽</b> вам обоим.</div>
+            <div class="highlight">
+                Чем больше нас — тем стабильнее и быстрее сервис для всех.<br>
+                Друг получит бонус 50 ₽. Вам — 50 ₽ + 30% с каждого его пополнения.
+            </div>
             <a href="https://cabinet.gate.lease/referral" class="cta-button">Моя реферальная программа</a>
             <div class="attachment"><span class="icon">📎</span> К письму приложена листовка о сервисе — перешлите её друзьям вместе со ссылкой.</div>
             <div class="fact">💡 Роскомнадзор блокирует VPN-сервисы со скоростью 30+ в месяц. Большинство популярных решений уже не работают.</div>
         </div>
         <div class="email-footer">
             <p>FreeNetGate — сделано для людей <span class="heart">&hearts;</span></p>
-            <p><a href="https://cabinet.gate.lease/unsubscribe?token=xxx">Отписаться от рассылки</a></p>
+            <p>Не хотите получать эти письма? Просто ответьте на это письмо — отключим.</p>
         </div>
     </div>
 </div>
@@ -281,13 +191,14 @@
             <p class="progress-text">1 из 3 друзей. Ещё 2 — и следующий месяц бесплатно!</p>
             <p>Ваша ссылка для приглашения друзей:</p>
             <div class="ref-link"><a href="https://cabinet.gate.lease?ref=ref1QSq65Ay">https://cabinet.gate.lease?ref=ref1QSq65Ay</a></div>
+            <p style="font-size:14px;color:#555;">Друг получит бонус 50 ₽. Вам — 50 ₽ + 10% с каждого его пополнения.</p>
             <a href="https://cabinet.gate.lease/referral" class="cta-button">Моя реферальная статистика</a>
             <div class="attachment"><span class="icon">📎</span> К письму приложена листовка о сервисе — перешлите её друзьям вместе со ссылкой.</div>
             <div class="fact">💡 Стандартные VPN-протоколы уже детектируются российским DPI. Работают только маскирующиеся протоколы.</div>
         </div>
         <div class="email-footer">
             <p>FreeNetGate — сделано для людей <span class="heart">&hearts;</span></p>
-            <p><a href="https://cabinet.gate.lease/unsubscribe?token=xxx">Отписаться от рассылки</a></p>
+            <p>Не хотите получать эти письма? Просто ответьте на это письмо — отключим.</p>
         </div>
     </div>
 </div>
@@ -308,14 +219,17 @@
             <p>У вас работают Telegram, Instagram, YouTube и другие привычные сервисы.<br>У ваших друзей и близких — скорее всего нет.</p>
             <p>Отправьте им ссылку — через минуту всё заработает:</p>
             <div class="ref-link"><a href="https://cabinet.gate.lease?ref=refotfLSnCP">https://cabinet.gate.lease?ref=refotfLSnCP</a></div>
-            <div class="highlight">За каждого друга — бонус <b>70 ₽</b> вам обоим.<br>3 друга = бесплатный месяц для вас.</div>
+            <div class="highlight">
+                Друг получит бонус 50 ₽. Вам — 50 ₽ + 10% с каждого его пополнения.<br>
+                3 друга = бесплатный месяц для вас.
+            </div>
             <a href="https://cabinet.gate.lease?ref=refotfLSnCP" class="cta-button">Пригласить друга</a>
             <div class="attachment"><span class="icon">📎</span> К письму приложена листовка о сервисе — перешлите её друзьям вместе со ссылкой.</div>
             <div class="fact">💡 В России заблокировано более 469 VPN-сервисов. Это на 70% больше, чем полгода назад.</div>
         </div>
         <div class="email-footer">
             <p>FreeNetGate — сделано для людей <span class="heart">&hearts;</span></p>
-            <p><a href="https://cabinet.gate.lease/unsubscribe?token=xxx">Отписаться от рассылки</a></p>
+            <p>Не хотите получать эти письма? Просто ответьте на это письмо — отключим.</p>
         </div>
     </div>
 </div>
@@ -335,13 +249,13 @@
             <p class="greeting">Привет, Денис!</p>
             <p>Заметили, что ваша подписка FreeNetGate неактивна.</p>
             <p>А Telegram, Instagram, YouTube и другие привычные сервисы по-прежнему заблокированы.</p>
-            <a href="https://cabinet.gate.lease" class="cta-button">Вернуться — от 200 ₽/мес</a>
-            <p style="text-align:center;font-size:14px;color:#666">Нужна помощь с настройкой? Напишите <a href="https://t.me/FreeInetRobot">@FreeInetRobot</a> — поможем за минуту.</p>
+            <a href="https://cabinet.gate.lease/balance/top-up" class="cta-button">Продлить подписку — от 200 ₽/мес</a>
+            <p style="text-align:center;font-size:14px;color:#666">Нужна помощь? <a href="https://cabinet.gate.lease/support">Напишите нам</a> — поможем за минуту.</p>
             <div class="fact">💡 YouTube полностью заблокирован в России с 12 февраля 2026 года.</div>
         </div>
         <div class="email-footer">
             <p>FreeNetGate — сделано для людей <span class="heart">&hearts;</span></p>
-            <p><a href="https://cabinet.gate.lease/unsubscribe?token=xxx">Отписаться от рассылки</a></p>
+            <p>Не хотите получать эти письма? Просто ответьте на это письмо — отключим.</p>
         </div>
     </div>
 </div>
@@ -360,14 +274,19 @@
         <div class="email-body">
             <p class="greeting">Привет, Sam!</p>
             <p>Рады, что пользуетесь FreeNetGate!</p>
-            <div class="highlight">Ваш пробный период заканчивается <b>17 апреля</b>.<br>Чтобы Telegram, Instagram, YouTube и другие сервисы продолжали работать — оформите подписку.</div>
-            <a href="https://cabinet.gate.lease" class="cta-button">Продлить — 30 дней за 200 ₽</a>
-            <p style="text-align:center;font-size:14px;color:#666">А если пригласите друга — получите бонус <b>70 ₽</b>.</p>
+            <div class="highlight">
+                Ваш пробный период заканчивается <b>17 апреля</b>.<br>
+                Чтобы Telegram, Instagram, YouTube и другие сервисы продолжали работать — оформите подписку.
+            </div>
+            <a href="https://cabinet.gate.lease/balance/top-up" class="cta-button">Оформить подписку — 30 дней за 200 ₽</a>
+            <p style="text-align:center;font-size:14px;color:#666">
+                А если пригласите друга — получите бонус 50 ₽, и ему тоже 50 ₽.
+            </p>
             <div class="fact">💡 Попытка заблокировать VPN в начале апреля 2026 привела к массовому сбою банковских платежей по всей России.</div>
         </div>
         <div class="email-footer">
             <p>FreeNetGate — сделано для людей <span class="heart">&hearts;</span></p>
-            <p><a href="https://cabinet.gate.lease/unsubscribe?token=xxx">Отписаться от рассылки</a></p>
+            <p>Не хотите получать эти письма? Просто ответьте на это письмо — отключим.</p>
         </div>
     </div>
 </div>
@@ -378,28 +297,28 @@
     <div class="segment-desc">
         <b>Кто:</b> на пробном периоде, ни разу не подключился (0 трафика).<br>
         <b>Частота:</b> ежедневно.<br>
-        <b>Цель:</b> помочь настроить, не потерять пользователя.
+        <b>Цель:</b> помочь настроить, не потерять пользователя. Ведём на /connection — кабинет сам определяет платформу и показывает нужное приложение.
     </div>
     <div class="email-subject"><span>Тема:</span> Вы ещё не подключились — поможем?</div>
     <div class="email-container">
         <div class="email-header"><h1>FreeNetGate</h1></div>
         <div class="email-body">
             <p class="greeting">Привет, Артём!</p>
-            <p>Вы зарегистрировались в FreeNetGate, но ещё не подключились.<br>Настройка займёт минуту:</p>
+            <p>Вы зарегистрировались в FreeNetGate, но ещё не подключились.</p>
             <div class="help-box">
-                <ol>
-                    <li>Скачайте приложение Happ: <a href="#">ссылка на приложение</a></li>
-                    <li>Откройте ссылку подписки: <a href="https://my.gate.lease/abc123">my.gate.lease/abc123</a></li>
-                    <li>Готово — Telegram, YouTube и другие сервисы работают!</li>
-                </ol>
+                <p style="margin:0 0 8px;font-weight:500;">Настройка займёт минуту:</p>
+                <p style="margin:0;">Перейдите по ссылке ниже — откроется инструкция для вашего устройства (Android, iPhone или компьютер). Скачайте приложение, добавьте подписку — и всё заработает.</p>
             </div>
-            <a href="https://my.gate.lease/abc123" class="cta-button">Подключиться сейчас</a>
-            <p style="text-align:center;font-size:14px;color:#666">Нужна помощь? Напишите <a href="https://t.me/FreeInetRobot">@FreeInetRobot</a>.<br>Пробный период до <b>10 апреля</b>.</p>
+            <a href="https://cabinet.gate.lease/connection" class="cta-button">Подключиться</a>
+            <p style="text-align:center;font-size:14px;color:#666">
+                Не получается? <a href="https://cabinet.gate.lease/support">Напишите нам</a> — поможем за минуту.<br>
+                Пробный период до <b>10 апреля</b>.
+            </p>
             <div class="fact">💡 VPN работает на всех устройствах: телефон, компьютер, планшет, даже телевизор.</div>
         </div>
         <div class="email-footer">
             <p>FreeNetGate — сделано для людей <span class="heart">&hearts;</span></p>
-            <p><a href="https://cabinet.gate.lease/unsubscribe?token=xxx">Отписаться от рассылки</a></p>
+            <p>Не хотите получать эти письма? Просто ответьте на это письмо — отключим.</p>
         </div>
     </div>
 </div>
