@@ -11,9 +11,11 @@
             margin: 0;
             padding: 20px;
         }
+        .segment-block {
+            max-width: 440px;
+            margin: 0 auto 50px;
+        }
         .preview-label {
-            max-width: 400px;
-            margin: 40px auto 8px;
             font-size: 13px;
             font-weight: 600;
             color: #fff;
@@ -21,10 +23,20 @@
             display: inline-block;
             padding: 4px 12px;
             border-radius: 4px 4px 0 0;
+            margin-bottom: 0;
         }
+        .segment-desc {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 0 6px 6px 6px;
+            padding: 10px 14px;
+            margin-bottom: 12px;
+            font-size: 13px;
+            color: #555;
+            line-height: 1.5;
+        }
+        .segment-desc b { color: #333; }
         .tg-chat {
-            max-width: 400px;
-            margin: 0 auto 40px;
             background: #efeae2;
             border-radius: 12px;
             padding: 16px;
@@ -39,7 +51,7 @@
             line-height: 1.6;
             color: #1a1a1a;
             box-shadow: 0 1px 2px rgba(0,0,0,0.06);
-            max-width: 340px;
+            max-width: 360px;
         }
         .tg-message b { font-weight: 600; }
         .tg-message a { color: #007bff; text-decoration: none; }
@@ -54,9 +66,15 @@
             word-break: break-all;
             color: #007bff;
         }
-        .tg-buttons {
-            max-width: 340px;
+        .tg-message .fact {
+            font-size: 12px;
+            color: #888;
+            border-top: 1px solid #eee;
+            margin-top: 10px;
+            padding-top: 8px;
+            font-style: italic;
         }
+        .tg-buttons { max-width: 360px; }
         .tg-buttons .tg-btn-row {
             display: flex;
             gap: 4px;
@@ -72,7 +90,6 @@
             color: #007bff;
             font-weight: 500;
             box-shadow: 0 1px 2px rgba(0,0,0,0.06);
-            cursor: pointer;
         }
         .tg-time {
             text-align: right;
@@ -84,200 +101,215 @@
 </head>
 <body>
 
+<h1 style="max-width:440px;margin:0 auto 30px;font-size:20px;color:#333;">Telegram-шаблоны реферального дайджеста</h1>
+
 <!-- ==================== SEGMENT A ==================== -->
-<div class="preview-label">Сегмент A — Друзья-рефереры (Telegram)</div>
-<div class="tg-chat">
-    <div class="tg-message">
-        Привет, <b>Denis</b>! Вот ваш дайджест FreeNetGate:<br><br>
-
-        📊 <b>За последние сутки:</b><br>
-        &nbsp;&nbsp;Новых приглашений: <b>1</b><br>
-        &nbsp;&nbsp;Заработано: <b>+110 ₽</b><br><br>
-
-        📈 <b>Всего:</b><br>
-        &nbsp;&nbsp;Приглашено: <b>12</b><br>
-        &nbsp;&nbsp;С платной подпиской: <b>5</b><br>
-        &nbsp;&nbsp;Заработано: <b>580 ₽</b><br><br>
-
-        🎯 Вывод доступен от 1000 ₽ — осталось 420 ₽!<br><br>
-
-        Ваша ссылка:
-        <span class="mono">cabinet.gate.lease?ref=ref0lvlCSPC</span>
-        <div class="tg-time">10:00</div>
+<div class="segment-block">
+    <div class="preview-label">Сегмент A — Друзья-рефереры</div>
+    <div class="segment-desc">
+        <b>Кто:</b> друзья сервиса (100% скидка), которые активно приглашают (есть реферальные начисления за 7 дней).<br>
+        <b>Частота:</b> ежедневно при новой активности, иначе Пн и Чт.<br>
+        <b>Цель:</b> показать прогресс и заработок, мотивировать продолжать.
     </div>
-    <div class="tg-buttons">
-        <div class="tg-btn-row">
-            <div class="tg-btn">📊 Моя статистика</div>
-            <div class="tg-btn">📋 Скопировать ссылку</div>
+    <div class="tg-chat">
+        <div class="tg-message">
+            Привет, <b>Denis</b>! Вот ваш дайджест FreeNetGate:<br><br>
+            📊 <b>За последние сутки:</b><br>
+            &nbsp;&nbsp;Новых приглашений: <b>1</b><br>
+            &nbsp;&nbsp;Заработано: <b>+110 ₽</b><br><br>
+            📈 <b>Всего:</b><br>
+            &nbsp;&nbsp;Приглашено: <b>12</b><br>
+            &nbsp;&nbsp;С платной подпиской: <b>5</b><br>
+            &nbsp;&nbsp;Заработано: <b>580 ₽</b><br><br>
+            🎯 Вывод доступен от 1000 ₽ — осталось 420 ₽!<br><br>
+            Ваша ссылка:
+            <span class="mono">cabinet.gate.lease?ref=ref0lvlCSPC</span>
+            <div class="fact">💡 65 миллионов россиян продолжают ежедневно пользоваться Telegram через VPN — несмотря на блокировку.</div>
+            <div class="tg-time">10:00</div>
         </div>
-        <div class="tg-btn-row">
-            <div class="tg-btn">🔕 Отписаться</div>
+        <div class="tg-buttons">
+            <div class="tg-btn-row">
+                <div class="tg-btn">📊 Моя статистика</div>
+                <div class="tg-btn">📋 Скопировать ссылку</div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- ==================== SEGMENT B ==================== -->
-<div class="preview-label">Сегмент B — Друзья, не приглашают (Telegram)</div>
-<div class="tg-chat">
-    <div class="tg-message">
-        Привет, <b>Надежда</b>!<br><br>
-
-        Вы пользуетесь FreeNetGate — и мы рады, что сервис вам полезен.<br><br>
-
-        У ваших знакомых тоже не работает Telegram, Instagram или YouTube и другие привычные сервисы. Поделитесь ссылкой — вы поможете и им, и нашему проекту:<br>
-        <span class="mono">cabinet.gate.lease?ref=refUcT2QSk6</span>
-
-        Чем больше нас — тем стабильнее сервис для всех.<br>
-        За каждого друга — бонус <b>110 ₽</b> вам обоим.
-        <div class="tg-time">10:00</div>
+<div class="segment-block">
+    <div class="preview-label">Сегмент B — Друзья, не приглашают</div>
+    <div class="segment-desc">
+        <b>Кто:</b> друзья сервиса (100% скидка), пользуются VPN, но никого не приглашали.<br>
+        <b>Частота:</b> Пн и Чт.<br>
+        <b>Цель:</b> мягко мотивировать через благодарность и помощь проекту. Не деньги — а ответная реакция за бесплатный доступ.
     </div>
-    <div class="tg-buttons">
-        <div class="tg-btn-row">
-            <div class="tg-btn">📋 Скопировать ссылку</div>
-            <div class="tg-btn">📊 Статистика</div>
+    <div class="tg-chat">
+        <div class="tg-message">
+            Привет, <b>Надежда</b>!<br><br>
+            Вы пользуетесь FreeNetGate — и мы рады, что сервис вам полезен.<br><br>
+            У ваших знакомых тоже не работает Telegram, Instagram или YouTube и другие привычные сервисы. Поделитесь ссылкой — вы поможете и им, и нашему проекту:<br>
+            <span class="mono">cabinet.gate.lease?ref=refUcT2QSk6</span>
+            Чем больше нас — тем стабильнее сервис для всех.<br>
+            За каждого друга — бонус <b>110 ₽</b> вам обоим.
+            <div class="fact">💡 Роскомнадзор блокирует VPN-сервисы со скоростью 30+ в месяц. Большинство популярных решений уже не работают.</div>
+            <div class="tg-time">10:00</div>
         </div>
-        <div class="tg-btn-row">
-            <div class="tg-btn">🔕 Отписаться</div>
+        <div class="tg-buttons">
+            <div class="tg-btn-row">
+                <div class="tg-btn">📋 Скопировать ссылку</div>
+                <div class="tg-btn">📊 Статистика</div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- ==================== SEGMENT C ==================== -->
-<div class="preview-label">Сегмент C — Базовые-рефереры (Telegram)</div>
-<div class="tg-chat">
-    <div class="tg-message">
-        Привет, <b>Анастасия</b>! Ваш дайджест FreeNetGate:<br><br>
-
-        📊 <b>За последние сутки:</b><br>
-        &nbsp;&nbsp;Новых приглашений: <b>0</b><br>
-        &nbsp;&nbsp;Заработано: <b>+0 ₽</b><br><br>
-
-        📈 <b>Всего:</b><br>
-        &nbsp;&nbsp;Приглашено: <b>1</b><br>
-        &nbsp;&nbsp;С платной подпиской: <b>1</b><br>
-        &nbsp;&nbsp;Заработано: <b>70 ₽</b><br><br>
-
-        🎯 До бесплатного месяца:<br>
-        &nbsp;&nbsp;███░░░░░░░ 1/3 друзей<br>
-        &nbsp;&nbsp;Ещё 2 — и следующий месяц бесплатно!<br><br>
-
-        Ваша ссылка:
-        <span class="mono">cabinet.gate.lease?ref=ref1QSq65Ay</span>
-        <div class="tg-time">10:00</div>
+<div class="segment-block">
+    <div class="preview-label">Сегмент C — Базовые-рефереры</div>
+    <div class="segment-desc">
+        <b>Кто:</b> платящие пользователи, которые уже приглашают друзей (есть начисления за 7 дней).<br>
+        <b>Частота:</b> ежедневно при новой активности, иначе Пн и Чт.<br>
+        <b>Цель:</b> прогресс до бесплатного месяца, мотивация бонусами.
     </div>
-    <div class="tg-buttons">
-        <div class="tg-btn-row">
-            <div class="tg-btn">📊 Моя статистика</div>
-            <div class="tg-btn">📋 Скопировать ссылку</div>
+    <div class="tg-chat">
+        <div class="tg-message">
+            Привет, <b>Анастасия</b>! Ваш дайджест FreeNetGate:<br><br>
+            📊 <b>За последние сутки:</b><br>
+            &nbsp;&nbsp;Новых приглашений: <b>0</b><br>
+            &nbsp;&nbsp;Заработано: <b>+0 ₽</b><br><br>
+            📈 <b>Всего:</b><br>
+            &nbsp;&nbsp;Приглашено: <b>1</b><br>
+            &nbsp;&nbsp;С платной подпиской: <b>1</b><br>
+            &nbsp;&nbsp;Заработано: <b>70 ₽</b><br><br>
+            🎯 До бесплатного месяца:<br>
+            &nbsp;&nbsp;███░░░░░░░ 1/3 друзей<br>
+            &nbsp;&nbsp;Ещё 2 — и следующий месяц бесплатно!<br><br>
+            Ваша ссылка:
+            <span class="mono">cabinet.gate.lease?ref=ref1QSq65Ay</span>
+            <div class="fact">💡 Стандартные VPN-протоколы уже детектируются российским DPI. Работают только маскирующиеся протоколы.</div>
+            <div class="tg-time">10:00</div>
         </div>
-        <div class="tg-btn-row">
-            <div class="tg-btn">🔕 Отписаться</div>
+        <div class="tg-buttons">
+            <div class="tg-btn-row">
+                <div class="tg-btn">📊 Моя статистика</div>
+                <div class="tg-btn">📋 Скопировать ссылку</div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- ==================== SEGMENT D ==================== -->
-<div class="preview-label">Сегмент D — Базовые платящие, не приглашают (Telegram)</div>
-<div class="tg-chat">
-    <div class="tg-message">
-        Привет, <b>Тимур</b>!<br><br>
-
-        У вас работают Telegram, Instagram, YouTube и другие привычные сервисы.<br>
-        У ваших друзей и близких — скорее всего нет.<br><br>
-
-        Отправьте им ссылку — через минуту всё заработает:
-        <span class="mono">cabinet.gate.lease?ref=refotfLSnCP</span>
-
-        За каждого друга — бонус <b>70 ₽</b> вам обоим.<br>
-        3 друга = бесплатный месяц для вас.
-        <div class="tg-time">10:00</div>
+<div class="segment-block">
+    <div class="preview-label">Сегмент D — Базовые платящие, не приглашают</div>
+    <div class="segment-desc">
+        <b>Кто:</b> платящие пользователи с активной подпиской, никого не приглашали.<br>
+        <b>Частота:</b> Пн и Чт.<br>
+        <b>Цель:</b> помочь их друзьям и близким, бонусы как дополнительная мотивация.
     </div>
-    <div class="tg-buttons">
-        <div class="tg-btn-row">
-            <div class="tg-btn">📋 Скопировать ссылку</div>
+    <div class="tg-chat">
+        <div class="tg-message">
+            Привет, <b>Тимур</b>!<br><br>
+            У вас работают Telegram, Instagram, YouTube и другие привычные сервисы.<br>
+            У ваших друзей и близких — скорее всего нет.<br><br>
+            Отправьте им ссылку — через минуту всё заработает:
+            <span class="mono">cabinet.gate.lease?ref=refotfLSnCP</span>
+            За каждого друга — бонус <b>70 ₽</b> вам обоим.<br>
+            3 друга = бесплатный месяц для вас.
+            <div class="fact">💡 В России заблокировано более 469 VPN-сервисов. Это на 70% больше, чем полгода назад.</div>
+            <div class="tg-time">10:00</div>
         </div>
-        <div class="tg-btn-row">
-            <div class="tg-btn">🔕 Отписаться</div>
+        <div class="tg-buttons">
+            <div class="tg-btn-row">
+                <div class="tg-btn">📋 Скопировать ссылку</div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- ==================== SEGMENT E ==================== -->
-<div class="preview-label">Сегмент E — Без активной подписки (Telegram)</div>
-<div class="tg-chat">
-    <div class="tg-message">
-        Привет, <b>Денис</b>!<br><br>
-
-        Заметили, что ваша подписка FreeNetGate неактивна.<br>
-        А Telegram, Instagram, YouTube и другие привычные сервисы по-прежнему заблокированы.<br><br>
-
-        Вернитесь — подписка от 200 ₽/мес.<br><br>
-
-        Нужна помощь с настройкой? Напишите — поможем за минуту.
-        <div class="tg-time">10:00</div>
+<div class="segment-block">
+    <div class="preview-label">Сегмент E — Без активной подписки</div>
+    <div class="segment-desc">
+        <b>Кто:</b> подписка expired или не создана. Включает и тех, кто пользовался раньше, и тех, кто только зарегистрировался.<br>
+        <b>Частота:</b> Пн и Чт, только 30 дней после expired.<br>
+        <b>Цель:</b> вернуть, предложить помощь.
     </div>
-    <div class="tg-buttons">
-        <div class="tg-btn-row">
-            <div class="tg-btn">💳 Продлить подписку</div>
+    <div class="tg-chat">
+        <div class="tg-message">
+            Привет, <b>Денис</b>!<br><br>
+            Заметили, что ваша подписка FreeNetGate неактивна.<br>
+            А Telegram, Instagram, YouTube и другие привычные сервисы по-прежнему заблокированы.<br><br>
+            Вернитесь — подписка от 200 ₽/мес.<br><br>
+            Нужна помощь с настройкой? Напишите — поможем за минуту.
+            <div class="fact">💡 YouTube полностью заблокирован в России с 12 февраля 2026 года.</div>
+            <div class="tg-time">10:00</div>
         </div>
-        <div class="tg-btn-row">
-            <div class="tg-btn">🛠 Помощь</div>
-            <div class="tg-btn">🔕 Отписаться</div>
+        <div class="tg-buttons">
+            <div class="tg-btn-row">
+                <div class="tg-btn">💳 Продлить подписку</div>
+                <div class="tg-btn">🛠 Помощь</div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- ==================== SEGMENT F1 ==================== -->
-<div class="preview-label">Сегмент F1 — Trial, пользуется VPN (Telegram)</div>
-<div class="tg-chat">
-    <div class="tg-message">
-        Привет, <b>Sam</b>!<br><br>
-
-        Рады, что пользуетесь FreeNetGate! 🚀<br><br>
-
-        ⏰ Ваш пробный период заканчивается <b>17 апреля</b>.<br><br>
-
-        Чтобы Telegram, Instagram, YouTube и другие сервисы продолжали работать — оформите подписку:<br>
-        30 дней — всего <b>200 ₽</b>.<br><br>
-
-        А если пригласите друга — получите бонус <b>70 ₽</b>.
-        <div class="tg-time">10:00</div>
+<div class="segment-block">
+    <div class="preview-label">Сегмент F1 — Trial, пользуется VPN</div>
+    <div class="segment-desc">
+        <b>Кто:</b> на пробном периоде (3 дня), уже подключился и пользуется VPN (есть трафик в Remnawave).<br>
+        <b>Частота:</b> ежедневно (trial всего 3 дня).<br>
+        <b>Цель:</b> конвертировать в платящего. Напомнить дату окончания, показать цену.
     </div>
-    <div class="tg-buttons">
-        <div class="tg-btn-row">
-            <div class="tg-btn">💳 Оформить подписку</div>
+    <div class="tg-chat">
+        <div class="tg-message">
+            Привет, <b>Sam</b>!<br><br>
+            Рады, что пользуетесь FreeNetGate! 🚀<br><br>
+            ⏰ Ваш пробный период заканчивается <b>17 апреля</b>.<br><br>
+            Чтобы Telegram, Instagram, YouTube и другие сервисы продолжали работать — оформите подписку:<br>
+            30 дней — всего <b>200 ₽</b>.<br><br>
+            А если пригласите друга — получите бонус <b>70 ₽</b>.
+            <div class="fact">💡 Настройка VPN на телефоне занимает около минуты. Дольше делать кофе.</div>
+            <div class="tg-time">10:00</div>
         </div>
-        <div class="tg-btn-row">
-            <div class="tg-btn">🔕 Отписаться</div>
+        <div class="tg-buttons">
+            <div class="tg-btn-row">
+                <div class="tg-btn">💳 Оформить подписку</div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- ==================== SEGMENT F2 ==================== -->
-<div class="preview-label">Сегмент F2 — Trial, не пользуется VPN (Telegram)</div>
-<div class="tg-chat">
-    <div class="tg-message">
-        Привет, <b>Артём</b>!<br><br>
-
-        Вы зарегистрировались в FreeNetGate, но ещё не подключились.<br>
-        Настройка займёт минуту:<br><br>
-
-        1. Скачайте приложение Happ<br>
-        2. Откройте ссылку подписки: <a href="#">my.gate.lease/abc123</a><br>
-        3. Готово — Telegram, YouTube и другие сервисы работают!<br><br>
-
-        Нужна помощь? Напишите нам.<br>
-        Пробный период до <b>10 апреля</b>.
-        <div class="tg-time">10:00</div>
+<div class="segment-block">
+    <div class="preview-label">Сегмент F2 — Trial, не пользуется VPN</div>
+    <div class="segment-desc">
+        <b>Кто:</b> на пробном периоде, но ни разу не подключился (0 трафика в Remnawave).<br>
+        <b>Частота:</b> ежедневно (trial всего 3 дня).<br>
+        <b>Цель:</b> помочь настроить, не потерять пользователя из-за сложности.
     </div>
-    <div class="tg-buttons">
-        <div class="tg-btn-row">
-            <div class="tg-btn">📲 Скачать Happ</div>
-            <div class="tg-btn">🔗 Моя подписка</div>
+    <div class="tg-chat">
+        <div class="tg-message">
+            Привет, <b>Артём</b>!<br><br>
+            Вы зарегистрировались в FreeNetGate, но ещё не подключились.<br>
+            Настройка займёт минуту:<br><br>
+            1. Скачайте приложение Happ<br>
+            2. Откройте ссылку подписки: <a href="#">my.gate.lease/abc123</a><br>
+            3. Готово — Telegram, YouTube и другие сервисы работают!<br><br>
+            Нужна помощь? Напишите нам.<br>
+            Пробный период до <b>10 апреля</b>.
+            <div class="fact">💡 VPN работает на всех устройствах: телефон, компьютер, планшет, даже телевизор.</div>
+            <div class="tg-time">10:00</div>
         </div>
-        <div class="tg-btn-row">
-            <div class="tg-btn">🛠 Помощь</div>
-            <div class="tg-btn">🔕 Отписаться</div>
+        <div class="tg-buttons">
+            <div class="tg-btn-row">
+                <div class="tg-btn">📲 Скачать Happ</div>
+                <div class="tg-btn">🔗 Моя подписка</div>
+            </div>
+            <div class="tg-btn-row">
+                <div class="tg-btn">🛠 Помощь</div>
+            </div>
         </div>
     </div>
 </div>
